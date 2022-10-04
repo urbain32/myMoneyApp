@@ -3,6 +3,10 @@
   margin: 60px auto;
   padding: 20px;
 }
+.login-form h2 {
+  align-items: center;
+  justify-content: center;
+}
 .login-form label {
   display: block;
   margin: 30px auto;
