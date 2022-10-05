@@ -9,7 +9,7 @@ export default function Navbar() {
     <div>
       <nav className='navbar'>
         <ul>
-          <li className='title'>myMoney</li>
+          <li className='title'>Money App</li>
 
           {!user && (
             <>

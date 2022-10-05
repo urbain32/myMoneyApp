@@ -97,3 +97,6 @@
   font-size: 0.9em;
   cursor: pointer;
 }
+.transactions button:hover{
+  background: #b1f7b7;
+}

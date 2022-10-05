@@ -1,0 +1,11 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /transactions/{document=**} {
+      // only if a user is authinacted will he then create
+      allow create: if request.auth != null;
+      // only if the id of the user match with the document can be deleted & read
+      allow read, delete: if request.auth.uid == resource.data.uid;
+    }
+  }
+}

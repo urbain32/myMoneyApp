@@ -17,7 +17,7 @@ export default function TransactionForm({ uid }) {
       setName('');
       setAmount('');
     }
-  }, [response.success,response]);
+  }, [response.success]);
   
   return (
     <>
